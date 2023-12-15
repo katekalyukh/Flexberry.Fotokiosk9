@@ -1,0 +1,130 @@
+﻿{
+  "name": "IISFotokiosk9Печать",
+  "modelName": "i-i-s-fotokiosk9-печать",
+  "className": "Печать",
+  "nameSpace": "IIS.Fotokiosk9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "размер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сделатьФото",
+      "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПечатьE",
+      "modelName": "i-i-s-fotokiosk9-печать",
+      "attrs": [
+        {
+          "name": "размер",
+          "caption": "Размер фото",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Сделанное фото",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Сделанное фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПечатьL",
+      "modelName": "i-i-s-fotokiosk9-печать",
+      "attrs": [
+        {
+          "name": "размер",
+          "caption": "Размер фото",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Сделанное фото",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "колВоФото",
+              "caption": "Количество фото",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Сделанное фото",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

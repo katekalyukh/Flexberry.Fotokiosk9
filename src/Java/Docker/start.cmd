@@ -1,0 +1,1 @@
+docker-compose -p fotokiosk9-java up -d

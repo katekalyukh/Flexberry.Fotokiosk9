@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Fotokiosk9",
+  "applicationTitle": "Fotokiosk9",
+  "items": [
+    {
+      "link": null,
+      "menuName": "fotokiosk9",
+      "caption": "Fotokiosk9",
+      "title": "Fotokiosk9",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk9-отправ-на-почту-l",
+          "menuName": null,
+          "caption": "Отправ на почту",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk9-оплата-l",
+          "menuName": null,
+          "caption": "Оплата",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk9-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk9-печать-l",
+          "menuName": null,
+          "caption": "Печать",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk9-сделать-фото-l",
+          "menuName": null,
+          "caption": "Сделать фото",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

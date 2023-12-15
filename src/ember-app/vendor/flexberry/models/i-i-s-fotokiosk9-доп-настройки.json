@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISFotokiosk9ДопНастройки",
+  "modelName": "i-i-s-fotokiosk9-доп-настройки",
+  "className": "ДопНастройки",
+  "nameSpace": "IIS.Fotokiosk9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "уголок",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "чБЦвет",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сделатьФото",
+      "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+      "inverse": "допНастройки"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДопНастройкиE",
+      "modelName": "i-i-s-fotokiosk9-доп-настройки",
+      "attrs": [
+        {
+          "name": "уголок",
+          "caption": "Уголок",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "чБЦвет",
+          "caption": "Ч б цвет",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

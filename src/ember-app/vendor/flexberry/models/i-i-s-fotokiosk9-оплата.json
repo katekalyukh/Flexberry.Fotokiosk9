@@ -1,0 +1,181 @@
+﻿{
+  "name": "IISFotokiosk9Оплата",
+  "modelName": "i-i-s-fotokiosk9-оплата",
+  "className": "Оплата",
+  "nameSpace": "IIS.Fotokiosk9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "способОпл",
+      "type": "i-i-s-fotokiosk9-вид-оплаты",
+      "flexberryType": "ВидОплаты",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сделатьФото",
+      "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОплатаE",
+      "modelName": "i-i-s-fotokiosk9-оплата",
+      "attrs": [
+        {
+          "name": "способОпл",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время оплаты",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Номер заказа",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "цена",
+              "caption": "Стоимость",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер заказа",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОплатаL",
+      "modelName": "i-i-s-fotokiosk9-оплата",
+      "attrs": [
+        {
+          "name": "способОпл",
+          "caption": "Способ оплаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время оплаты",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СделатьФото",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "id",
+              "caption": "Номер заказа",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "категорФото",
+              "caption": "Категория фото",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "цена",
+              "caption": "Стоимость",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер заказа",
+          "name": "сделатьФото",
+          "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

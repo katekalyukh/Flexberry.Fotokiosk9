@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk9-печать-e",
+  "editForm": "i-i-s-fotokiosk9-печать-e",
+  "external": false,
+  "caption": "Печать",
+  "name": "IISFotokiosk9ПечатьL",
+  "className": "ПечатьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk9-печать",
+      "modelProjection": "ПечатьL"
+    }
+  ]
+}

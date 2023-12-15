@@ -1,0 +1,139 @@
+﻿{
+  "name": "IISFotokiosk9СделатьФото",
+  "modelName": "i-i-s-fotokiosk9-сделать-фото",
+  "className": "СделатьФото",
+  "nameSpace": "IIS.Fotokiosk9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "категорФото",
+      "type": "i-i-s-fotokiosk9-категория",
+      "flexberryType": "Категория",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колВоФото",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "допНастройки",
+      "relatedTo": "i-i-s-fotokiosk9-доп-настройки",
+      "inverse": "сделатьФото"
+    }
+  ],
+  "projections": [
+    {
+      "name": "СделатьФотоE",
+      "modelName": "i-i-s-fotokiosk9-сделать-фото",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колВоФото",
+          "caption": "Количество фото",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "категорФото",
+          "caption": "Категория фото",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена(руб)",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДопНастройкиE",
+          "caption": "Дополнительные настройки",
+          "name": "допНастройки",
+          "relatedTo": "i-i-s-fotokiosk9-доп-настройки",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СделатьФотоL",
+      "modelName": "i-i-s-fotokiosk9-сделать-фото",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колВоФото",
+          "caption": "Количество фото",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "категорФото",
+          "caption": "Категория фото",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена(руб)",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДопНастройкиE",
+          "caption": "Дополнительные настройки",
+          "name": "допНастройки",
+          "relatedTo": "i-i-s-fotokiosk9-доп-настройки",
+          "inverse": null
+        }
+      ]
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

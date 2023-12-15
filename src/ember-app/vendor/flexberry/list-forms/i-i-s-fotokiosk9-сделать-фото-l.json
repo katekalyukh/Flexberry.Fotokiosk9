@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk9-сделать-фото-e",
+  "editForm": "i-i-s-fotokiosk9-сделать-фото-e",
+  "external": false,
+  "caption": "Сделать фото",
+  "name": "IISFotokiosk9СделатьФотоL",
+  "className": "СделатьФотоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk9-сделать-фото",
+      "modelProjection": "СделатьФотоL"
+    }
+  ]
+}

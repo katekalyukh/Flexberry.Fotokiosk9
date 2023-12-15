@@ -1,0 +1,223 @@
+﻿{
+  "name": "IISFotokiosk9Клиент",
+  "modelName": "i-i-s-fotokiosk9-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.Fotokiosk9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оплата",
+      "relatedTo": "i-i-s-fotokiosk9-оплата",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отправНаПочту",
+      "relatedTo": "i-i-s-fotokiosk9-отправ-на-почту",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-fotokiosk9-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "email",
+              "caption": "Email",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk9-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Оплата.СделатьФото",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "id",
+                  "caption": "Номер заказа",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сделатьФото",
+              "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата заказа",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "время",
+              "caption": "Время заказа",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер заказа",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk9-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-fotokiosk9-клиент",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОтправНаПочту",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "email",
+              "caption": "Email",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 0,
+          "type": "default",
+          "caption": "Данные о клиенте",
+          "name": "отправНаПочту",
+          "relatedTo": "i-i-s-fotokiosk9-отправ-на-почту",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оплата",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Оплата.СделатьФото",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "id",
+                  "caption": "Номер заказа",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сделатьФото",
+              "relatedTo": "i-i-s-fotokiosk9-сделать-фото",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата заказа",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "время",
+              "caption": "Время заказа",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "способОпл",
+              "caption": "Способ оплаты",
+              "hidden": false,
+              "index": 7
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Заказ",
+          "name": "оплата",
+          "relatedTo": "i-i-s-fotokiosk9-оплата",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
